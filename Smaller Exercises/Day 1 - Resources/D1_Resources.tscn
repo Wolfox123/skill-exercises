@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://7mwgbrmwxvwl"]
+
+[ext_resource type="PackedScene" uid="uid://dv5g2fkg56ctn" path="res://Smaller Exercises/Day 1 - Resources/Prefabs/ItemSpawner.tscn" id="1_qe87v"]
+
+[node name="D1Resources" type="Node3D"]
+
+[node name="ItemSpawner" parent="." instance=ExtResource("1_qe87v")]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)

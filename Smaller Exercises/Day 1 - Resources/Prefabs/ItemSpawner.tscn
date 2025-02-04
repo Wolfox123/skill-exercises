@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dv5g2fkg56ctn"]
+
+[ext_resource type="Script" path="res://Smaller Exercises/Day 1 - Resources/Scripts/D1ItemSpawner.cs" id="1_3thul"]
+
+[node name="ItemSpawner" type="Node3D"]
+script = ExtResource("1_3thul")

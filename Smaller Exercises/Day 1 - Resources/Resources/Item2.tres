@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="D1ItemDataRes" load_steps=3 format=3 uid="uid://c4ppt4c0fbugj"]
+
+[ext_resource type="Texture2D" uid="uid://bhjwrdn1wtyjb" path="res://Smaller Exercises/Day 1 - Resources/Assets/Icon.1_29.png" id="1_3tcmk"]
+[ext_resource type="Script" path="res://Smaller Exercises/Day 1 - Resources/Scripts/D1ItemDataRes.cs" id="2_d41v1"]
+
+[resource]
+script = ExtResource("2_d41v1")
+itemName = "Item 2"
+itemMesh = ExtResource("1_3tcmk")
+itemOffset = Vector2(0, 0)
+itemPixelScale = 0.001
+position = Vector3(1, 0, 0)
