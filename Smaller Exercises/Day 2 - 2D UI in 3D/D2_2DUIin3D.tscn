@@ -1,0 +1,76 @@
+[gd_scene load_steps=6 format=3 uid="uid://dtg0053t4iqgy"]
+
+[ext_resource type="Script" path="res://Smaller Exercises/Day 2 - 2D UI in 3D/Scripts/D2_CameraHandler.cs" id="1_dw3cx"]
+[ext_resource type="Texture2D" uid="uid://cw7g8210ysfy1" path="res://icon.svg" id="2_i4ac3"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_5sxk2"]
+size = Vector2(20, 20)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sbvct"]
+albedo_color = Color(0.611765, 0.490196, 0.458824, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_1t8co"]
+material = SubResource("StandardMaterial3D_sbvct")
+
+[node name="Day 2 - 2D UI in 3D" type="Node3D"]
+
+[node name="Floor" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_5sxk2")
+
+[node name="Prop" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 1, 0.5, 0)
+mesh = SubResource("BoxMesh_1t8co")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 2, 4)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, -0.707107, 0, 0.707107, 0.707107, 0, 2, 3)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="MiniMap" type="Panel" parent="CanvasLayer"]
+offset_left = 107.0
+offset_top = 571.0
+offset_right = 561.0
+offset_bottom = 968.0
+mouse_filter = 1
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="CanvasLayer/MiniMap"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.127753
+anchor_top = -0.288413
+anchor_right = 1.12775
+anchor_bottom = 1.29093
+offset_left = 58.0
+offset_top = 114.5
+offset_right = -58.0
+offset_bottom = -115.5
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="SubViewport" type="SubViewport" parent="CanvasLayer/MiniMap/SubViewportContainer"]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(454, 397)
+render_target_update_mode = 4
+
+[node name="Camera2D" type="Camera2D" parent="CanvasLayer/MiniMap/SubViewportContainer/SubViewport"]
+script = ExtResource("1_dw3cx")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/MiniMap/SubViewportContainer/SubViewport"]
+texture = ExtResource("2_i4ac3")
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 570.0
+offset_top = 572.0
+offset_right = 1004.0
+offset_bottom = 695.0
+text = "Left Click to Drag
+
+Mouse Wheel to Zoom"
+
+[connection signal="mouse_entered" from="CanvasLayer/MiniMap" to="CanvasLayer/MiniMap/SubViewportContainer/SubViewport/Camera2D" method="MouseEnter"]
+[connection signal="mouse_exited" from="CanvasLayer/MiniMap" to="CanvasLayer/MiniMap/SubViewportContainer/SubViewport/Camera2D" method="MouseExit"]
