@@ -1,0 +1,42 @@
+[gd_scene load_steps=2 format=3 uid="uid://d0b3xastqygd8"]
+
+[ext_resource type="Script" path="res://Smaller Exercises/Day 3 - Save And Load/Scripts/D3_SaveHandler.cs" id="1_7sgsf"]
+
+[node name="D3_SaveAndLoad" type="Node3D" node_paths=PackedStringArray("UITextEditor")]
+script = ExtResource("1_7sgsf")
+UITextEditor = NodePath("CanvasLayer/Panel/TextEdit")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Button3" type="Button" parent="CanvasLayer/Panel"]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 438.0
+offset_right = 346.0
+offset_bottom = 641.0
+focus_mode = 0
+text = "Reset Save
+"
+
+[node name="TextEdit" type="TextEdit" parent="CanvasLayer/Panel"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 252.0
+offset_right = 331.0
+offset_bottom = 406.0
+placeholder_text = "Put Text Here to save
+
+It will auto save when typing"
+
+[connection signal="pressed" from="CanvasLayer/Panel/Button3" to="." method="CreateNewSave"]
+[connection signal="text_changed" from="CanvasLayer/Panel/TextEdit" to="." method="TextEdited"]

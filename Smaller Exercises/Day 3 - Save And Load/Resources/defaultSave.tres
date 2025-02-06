@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="D3_SaveResource" load_steps=2 format=3 uid="uid://373ivs06k4aq"]
+
+[ext_resource type="Script" path="res://Smaller Exercises/Day 3 - Save And Load/Scripts/D3_SaveResource.cs" id="1_bhjya"]
+
+[resource]
+script = ExtResource("1_bhjya")
+version = 1

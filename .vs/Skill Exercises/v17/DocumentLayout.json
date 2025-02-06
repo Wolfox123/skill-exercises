@@ -1,12 +1,54 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "H:\\Godot\\skill-exercises\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{28873BA1-934E-435C-B150-65D54BB7BC0D}|Skill Exercises.csproj|h:\\godot\\skill-exercises\\smaller exercises\\day 3 - save and load\\scripts\\d3_savehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28873BA1-934E-435C-B150-65D54BB7BC0D}|Skill Exercises.csproj|solutionrelative:smaller exercises\\day 3 - save and load\\scripts\\d3_savehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28873BA1-934E-435C-B150-65D54BB7BC0D}|Skill Exercises.csproj|h:\\godot\\skill-exercises\\smaller exercises\\day 3 - save and load\\scripts\\d3_saveresource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28873BA1-934E-435C-B150-65D54BB7BC0D}|Skill Exercises.csproj|solutionrelative:smaller exercises\\day 3 - save and load\\scripts\\d3_saveresource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "D3_SaveHandler.cs",
+              "DocumentMoniker": "H:\\Godot\\skill-exercises\\Smaller Exercises\\Day 3 - Save And Load\\Scripts\\D3_SaveHandler.cs",
+              "RelativeDocumentMoniker": "Smaller Exercises\\Day 3 - Save And Load\\Scripts\\D3_SaveHandler.cs",
+              "ToolTip": "H:\\Godot\\skill-exercises\\Smaller Exercises\\Day 3 - Save And Load\\Scripts\\D3_SaveHandler.cs",
+              "RelativeToolTip": "Smaller Exercises\\Day 3 - Save And Load\\Scripts\\D3_SaveHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T22:17:17.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "D3_SaveResource.cs",
+              "DocumentMoniker": "H:\\Godot\\skill-exercises\\Smaller Exercises\\Day 3 - Save And Load\\Scripts\\D3_SaveResource.cs",
+              "RelativeDocumentMoniker": "Smaller Exercises\\Day 3 - Save And Load\\Scripts\\D3_SaveResource.cs",
+              "ToolTip": "H:\\Godot\\skill-exercises\\Smaller Exercises\\Day 3 - Save And Load\\Scripts\\D3_SaveResource.cs",
+              "RelativeToolTip": "Smaller Exercises\\Day 3 - Save And Load\\Scripts\\D3_SaveResource.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T22:14:52.041Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
