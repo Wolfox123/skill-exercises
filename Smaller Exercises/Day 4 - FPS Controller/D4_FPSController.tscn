@@ -1,0 +1,59 @@
+[gd_scene load_steps=6 format=3 uid="uid://cqgb4v0f4e3dm"]
+
+[ext_resource type="PackedScene" uid="uid://dl68xxhneeauq" path="res://Smaller Exercises/Day 4 - FPS Controller/Prefabs/D4_character.tscn" id="1_p0gny"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_nabwu"]
+size = Vector2(10, 10)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uuw7b"]
+size = Vector3(10, 0, 10)
+
+[sub_resource type="BoxMesh" id="BoxMesh_gvwbc"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lhn5c"]
+
+[node name="D4FpsController" type="Node3D"]
+
+[node name="Map" type="Node3D" parent="."]
+
+[node name="Floor" type="StaticBody3D" parent="Map"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Map/Floor"]
+mesh = SubResource("PlaneMesh_nabwu")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/Floor"]
+shape = SubResource("BoxShape3D_uuw7b")
+
+[node name="Prop" type="StaticBody3D" parent="Map"]
+transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, 2, 0.499862, -2)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Map/Prop"]
+mesh = SubResource("BoxMesh_gvwbc")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/Prop"]
+shape = SubResource("BoxShape3D_lhn5c")
+
+[node name="Prop3" type="StaticBody3D" parent="Map"]
+transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, 2.78887, 1.73732, 0.300202)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Map/Prop3"]
+mesh = SubResource("BoxMesh_gvwbc")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/Prop3"]
+shape = SubResource("BoxShape3D_lhn5c")
+
+[node name="Prop2" type="StaticBody3D" parent="Map"]
+transform = Transform3D(1.73205, 0, -1, 0, 2, 0, 1, 0, 1.73205, 3.20697, 1.02166, -1.16191)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Map/Prop2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.153362, 0)
+mesh = SubResource("BoxMesh_gvwbc")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/Prop2"]
+shape = SubResource("BoxShape3D_lhn5c")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 1, 4)
+
+[node name="D4_Character" parent="." instance=ExtResource("1_p0gny")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
