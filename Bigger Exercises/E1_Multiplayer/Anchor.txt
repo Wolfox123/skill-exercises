@@ -1,0 +1,2 @@
+The first big exercise I wish to attack is a Multiplayer Server Framework. 
+This may take a bit and slowly chipped at as I am doing smaller exercises
