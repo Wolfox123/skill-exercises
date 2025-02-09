@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "H:\\Godot\\skill-exercises\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{28873BA1-934E-435C-B150-65D54BB7BC0D}|Skill Exercises.csproj|h:\\godot\\skill-exercises\\smaller exercises\\day 4 - fps controller\\scripts\\d4_fpscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28873BA1-934E-435C-B150-65D54BB7BC0D}|Skill Exercises.csproj|solutionrelative:smaller exercises\\day 4 - fps controller\\scripts\\d4_fpscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{28873BA1-934E-435C-B150-65D54BB7BC0D}|Skill Exercises.csproj|h:\\godot\\skill-exercises\\smaller exercises\\day 5 - tp controller\\scripts\\tpplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28873BA1-934E-435C-B150-65D54BB7BC0D}|Skill Exercises.csproj|solutionrelative:smaller exercises\\day 5 - tp controller\\scripts\\tpplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "D4_FPSController.cs",
-              "DocumentMoniker": "H:\\Godot\\skill-exercises\\Smaller Exercises\\Day 4 - FPS Controller\\Scripts\\D4_FPSController.cs",
-              "RelativeDocumentMoniker": "Smaller Exercises\\Day 4 - FPS Controller\\Scripts\\D4_FPSController.cs",
-              "ToolTip": "H:\\Godot\\skill-exercises\\Smaller Exercises\\Day 4 - FPS Controller\\Scripts\\D4_FPSController.cs",
-              "RelativeToolTip": "Smaller Exercises\\Day 4 - FPS Controller\\Scripts\\D4_FPSController.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAgwHsAAABIAAAAAAAAAA==",
+              "Title": "TPPlayer.cs",
+              "DocumentMoniker": "H:\\Godot\\skill-exercises\\Smaller Exercises\\Day 5 - TP Controller\\Scripts\\TPPlayer.cs",
+              "RelativeDocumentMoniker": "Smaller Exercises\\Day 5 - TP Controller\\Scripts\\TPPlayer.cs",
+              "ToolTip": "H:\\Godot\\skill-exercises\\Smaller Exercises\\Day 5 - TP Controller\\Scripts\\TPPlayer.cs",
+              "RelativeToolTip": "Smaller Exercises\\Day 5 - TP Controller\\Scripts\\TPPlayer.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBgAAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T16:35:24.122Z",
+              "WhenOpened": "2025-02-08T21:44:01.074Z",
               "EditorCaption": ""
             }
           ]
