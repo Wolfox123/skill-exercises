@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "H:\\Godot\\skill-exercises\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{28873BA1-934E-435C-B150-65D54BB7BC0D}|Skill Exercises.csproj|h:\\godot\\skill-exercises\\smaller exercises\\day 6 - drag and drop\\scripts\\draganddroptyped.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28873BA1-934E-435C-B150-65D54BB7BC0D}|Skill Exercises.csproj|solutionrelative:smaller exercises\\day 6 - drag and drop\\scripts\\draganddroptyped.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28873BA1-934E-435C-B150-65D54BB7BC0D}|Skill Exercises.csproj|h:\\godot\\skill-exercises\\smaller exercises\\day 6 - drag and drop\\scripts\\draganddrop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28873BA1-934E-435C-B150-65D54BB7BC0D}|Skill Exercises.csproj|solutionrelative:smaller exercises\\day 6 - drag and drop\\scripts\\draganddrop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28873BA1-934E-435C-B150-65D54BB7BC0D}|Skill Exercises.csproj|h:\\godot\\skill-exercises\\smaller exercises\\day 6 - drag and drop\\scripts\\dropobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28873BA1-934E-435C-B150-65D54BB7BC0D}|Skill Exercises.csproj|solutionrelative:smaller exercises\\day 6 - drag and drop\\scripts\\dropobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{28873BA1-934E-435C-B150-65D54BB7BC0D}|Skill Exercises.csproj|h:\\godot\\skill-exercises\\smaller exercises\\day 7 - pathfinding ai\\scripts\\aipawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28873BA1-934E-435C-B150-65D54BB7BC0D}|Skill Exercises.csproj|solutionrelative:smaller exercises\\day 7 - pathfinding ai\\scripts\\aipawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DragAndDropTyped.cs",
-              "DocumentMoniker": "H:\\Godot\\skill-exercises\\Smaller Exercises\\Day 6 - Drag and Drop\\Scripts\\DragAndDropTyped.cs",
-              "RelativeDocumentMoniker": "Smaller Exercises\\Day 6 - Drag and Drop\\Scripts\\DragAndDropTyped.cs",
-              "ToolTip": "H:\\Godot\\skill-exercises\\Smaller Exercises\\Day 6 - Drag and Drop\\Scripts\\DragAndDropTyped.cs",
-              "RelativeToolTip": "Smaller Exercises\\Day 6 - Drag and Drop\\Scripts\\DragAndDropTyped.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABCAAAAAAAAAA==",
+              "Title": "AIPawn.cs",
+              "DocumentMoniker": "H:\\Godot\\skill-exercises\\Smaller Exercises\\Day 7 - Pathfinding AI\\Scripts\\AIPawn.cs",
+              "RelativeDocumentMoniker": "Smaller Exercises\\Day 7 - Pathfinding AI\\Scripts\\AIPawn.cs",
+              "ToolTip": "H:\\Godot\\skill-exercises\\Smaller Exercises\\Day 7 - Pathfinding AI\\Scripts\\AIPawn.cs",
+              "RelativeToolTip": "Smaller Exercises\\Day 7 - Pathfinding AI\\Scripts\\AIPawn.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAB6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T19:43:59.421Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DragAndDrop.cs",
-              "DocumentMoniker": "H:\\Godot\\skill-exercises\\Smaller Exercises\\Day 6 - Drag and Drop\\Scripts\\DragAndDrop.cs",
-              "RelativeDocumentMoniker": "Smaller Exercises\\Day 6 - Drag and Drop\\Scripts\\DragAndDrop.cs",
-              "ToolTip": "H:\\Godot\\skill-exercises\\Smaller Exercises\\Day 6 - Drag and Drop\\Scripts\\DragAndDrop.cs",
-              "RelativeToolTip": "Smaller Exercises\\Day 6 - Drag and Drop\\Scripts\\DragAndDrop.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T19:32:26.127Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DropObject.cs",
-              "DocumentMoniker": "H:\\Godot\\skill-exercises\\Smaller Exercises\\Day 6 - Drag and Drop\\Scripts\\DropObject.cs",
-              "RelativeDocumentMoniker": "Smaller Exercises\\Day 6 - Drag and Drop\\Scripts\\DropObject.cs",
-              "ToolTip": "H:\\Godot\\skill-exercises\\Smaller Exercises\\Day 6 - Drag and Drop\\Scripts\\DropObject.cs",
-              "RelativeToolTip": "Smaller Exercises\\Day 6 - Drag and Drop\\Scripts\\DropObject.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T19:32:25.579Z",
+              "WhenOpened": "2025-02-10T23:36:15.277Z",
               "EditorCaption": ""
             }
           ]

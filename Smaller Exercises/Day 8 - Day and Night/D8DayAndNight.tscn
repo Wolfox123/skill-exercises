@@ -1,0 +1,238 @@
+[gd_scene load_steps=19 format=3 uid="uid://cm47oo166oc2r"]
+
+[ext_resource type="Texture2D" uid="uid://c8arnlq67qi7" path="res://Generic Assets/textures/grids/Dark/texture_05.png" id="1_13jny"]
+[ext_resource type="Texture2D" uid="uid://b58xv1joypxo5" path="res://Generic Assets/textures/grids/Orange/texture_09.png" id="2_s4614"]
+[ext_resource type="Texture2D" uid="uid://cm5m7nr7dugjd" path="res://Generic Assets/textures/grids/Purple/texture_09.png" id="3_sfva7"]
+[ext_resource type="Texture2D" uid="uid://djg8y25y06h5n" path="res://Generic Assets/textures/grids/Green/texture_09.png" id="4_y6fue"]
+[ext_resource type="PackedScene" uid="uid://cvuhkge5fujwr" path="res://Smaller Exercises/Day 5 - TP Controller/Scenes/TP_Player.tscn" id="5_h6p5v"]
+
+[sub_resource type="Animation" id="Animation_cyhbe"]
+resource_name = "DayAndNight"
+length = 12.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 12),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-1.5708, 0, 0), Vector3(-4.71239, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:light_energy")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 3, 9),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [1.0, 0.0, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_d4elt"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:light_energy")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ylckn"]
+_data = {
+"DayAndNight": SubResource("Animation_cyhbe"),
+"RESET": SubResource("Animation_d4elt")
+}
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_oxh0f"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_wa3eb"]
+sky_material = SubResource("ProceduralSkyMaterial_oxh0f")
+
+[sub_resource type="Environment" id="Environment_t3c4w"]
+background_mode = 1
+sky = SubResource("Sky_wa3eb")
+ambient_light_source = 2
+ambient_light_color = Color(0.4, 0.858824, 0.964706, 1)
+tonemap_mode = 2
+sdfgi_enabled = true
+glow_enabled = true
+fog_enabled = true
+fog_light_color = Color(1, 1, 1, 1)
+fog_density = 0.001
+
+[sub_resource type="Animation" id="Animation_qacnf"]
+resource_name = "SkyColor"
+length = 12.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:environment:background_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.4, 0.858824, 0.964706, 1), Color(0.0470588, 0.054902, 0.227451, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:environment:ambient_light_color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.4, 0.858824, 0.964706, 1), Color(0.0470588, 0.054902, 0.227451, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:environment:fog_light_color")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.4, 0.858824, 0.964706, 1), Color(0.0470588, 0.054902, 0.227451, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_6rmgf"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:environment:background_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:environment:ambient_light_color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.4, 0.858824, 0.964706, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:environment:fog_light_color")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rfqq8"]
+_data = {
+"RESET": SubResource("Animation_6rmgf"),
+"SkyColor": SubResource("Animation_qacnf")
+}
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fnicm"]
+albedo_texture = ExtResource("1_13jny")
+uv1_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3jdmt"]
+albedo_texture = ExtResource("2_s4614")
+uv1_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fca3i"]
+albedo_texture = ExtResource("3_sfva7")
+uv1_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qu4ox"]
+albedo_texture = ExtResource("4_y6fue")
+uv1_triplanar = true
+
+[node name="D8_Day And Night" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.999999, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+shadow_enabled = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="DirectionalLight3D"]
+libraries = {
+"": SubResource("AnimationLibrary_ylckn")
+}
+autoplay = "DayAndNight"
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_t3c4w")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="WorldEnvironment"]
+libraries = {
+"": SubResource("AnimationLibrary_rfqq8")
+}
+autoplay = "SkyColor"
+
+[node name="Map" type="Node3D" parent="."]
+
+[node name="Floor" type="CSGBox3D" parent="Map"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+material_override = SubResource("StandardMaterial3D_fnicm")
+use_collision = true
+size = Vector3(1000, 1, 1000)
+
+[node name="Box_Orange" type="CSGBox3D" parent="Map"]
+transform = Transform3D(0.815805, 0, 0.578328, 0, 1, 0, -0.578328, 0, 0.815805, -2.35081, 0.5, -2.30633)
+material_override = SubResource("StandardMaterial3D_3jdmt")
+use_collision = true
+
+[node name="Box_Purple" type="CSGBox3D" parent="Map"]
+transform = Transform3D(0.491755, 0, -0.870734, 0, 1, 0, 0.870734, 0, 0.491755, 3.23201, 1, -2.2755)
+material_override = SubResource("StandardMaterial3D_fca3i")
+use_collision = true
+size = Vector3(2, 2, 2)
+
+[node name="Box_Green" type="CSGBox3D" parent="Map"]
+transform = Transform3D(-0.759918, 0, -0.650019, 0, 1, 0, 0.650019, 0, -0.759918, 3.86646, 1.5, 4.53188)
+material_override = SubResource("StandardMaterial3D_qu4ox")
+use_collision = true
+size = Vector3(3, 3, 3)
+
+[node name="TpPlayer" parent="." instance=ExtResource("5_h6p5v")]
